@@ -21,7 +21,6 @@ export const Payment = () => {
                 product: cart,
                 // payment: data
             }
-            console.log(newOrder);
             addNewOrder(newOrder);
             navigate('/checkout/success');
     }

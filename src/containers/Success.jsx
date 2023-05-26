@@ -1,4 +1,5 @@
 import React from "react";
+import { Map } from "../components";
 import "../styles/Success.css";
 
 export const Success = () => {
@@ -6,10 +7,8 @@ export const Success = () => {
         <div className="success">
             <div className="success-content">
                 <h2>Ayriel, gracias por tu compra</h2>
-                <span>Tu pedido llegará en tres días en tu direccion:</span>
-                <div className="success-map">
-                    direccion xxxxxx
-                </div>
+                <span>Tu pedido llegará en tres días en tu direccion</span>
+            
             </div>
         </div>
     )
