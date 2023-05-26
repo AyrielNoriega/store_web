@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { Product } from './Product';
 import { AppContext } from '../context/AppContext';
-import "../styles/components/Products.css";
+import "../styles/Products.css";
 
 export const Products = () => {
 
@@ -13,8 +13,8 @@ export const Products = () => {
     }
     
     return (
-        <div className='Products'>
-            <div className="Products-items">
+        <div className='products'>
+            <div className="products-items">
                 {products.map(product => (
                     <Product key={product.id} product={product} handleAddToCart={handleAddToCart}/>
                 ))}

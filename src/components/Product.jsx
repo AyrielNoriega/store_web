@@ -2,9 +2,9 @@ import React from 'react';
 
 export const Product = ({product, handleAddToCart }) => {
     return (
-        <div className='Products-item'>
+        <div className='products-item'>
             <img src={product.image} alt={product.title} />
-            <div className="Product-item-info">
+            <div className="product-item-info">
                 <h2>
                     {product.title}{' '}
                     <span>

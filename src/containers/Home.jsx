@@ -6,7 +6,7 @@ export const Home = () => {
     return (
         <>
             <title>
-                Platzi Conf Merch
+                Store
             </title>
             <Products products={initialState.products}/>
         </>

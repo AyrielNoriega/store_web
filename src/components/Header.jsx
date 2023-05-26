@@ -8,17 +8,17 @@ export const Header = () => {
     const {state: {cart}} = useContext(AppContext);
 
     return (
-        <div className='Header'>
-            <h1 className='Header-title'>
+        <div className='header'>
+            <h1 className='header-title'>
                 <Link to="/">
-                    Platzi Conf Merch
+                    Store
                 </Link>
             </h1>
-            <div className='Header-checkout'>
+            <div className='header-checkout'>
                 <Link to="/checkout" >
                     <i className='fas fa-shopping-basket' title="Checkout" />
                 </Link>
-                {cart.length > 0 && <div className='Header-alert'>{cart.length}</div>}
+                {cart.length > 0 && <div className='header-alert'>{cart.length}</div>}
             </div>
         </div>
     )

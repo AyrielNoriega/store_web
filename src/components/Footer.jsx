@@ -3,9 +3,9 @@ import '../styles/Footer.css';
 
 export const Footer = () => {
     return (
-        <div className='Footer'>
-            <p className="Footer-title">Conf Merch</p>
-            <p className="Footer-copy">All rights reserved</p>
+        <div className='footer'>
+            <p className="footer-title">Store</p>
+            <p className="footer-copy">All rights reserved</p>
         </div>
     )
 }
