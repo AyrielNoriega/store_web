@@ -8,7 +8,7 @@ export const Header = () => {
     const {state: {cart}} = useContext(AppContext);
 
     return (
-        <div className='header'>
+        <header className='header'>
             <h1 className='header-title'>
                 <Link to="/">
                     Store
@@ -20,6 +20,6 @@ export const Header = () => {
                 </Link>
                 {cart.length > 0 && <div className='header-alert'>{cart.length}</div>}
             </div>
-        </div>
+        </header>
     )
 }

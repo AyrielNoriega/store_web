@@ -4,7 +4,7 @@ export const Product = ({product, handleAddToCart }) => {
     return (
         <div className='products-item'>
             <img src={product.image} alt={product.title} />
-            <div className="product-item-info">
+            <div className="products-item-info">
                 <h2>
                     {product.title}{' '}
                     <span>

@@ -3,9 +3,9 @@ import '../styles/Footer.css';
 
 export const Footer = () => {
     return (
-        <div className='footer'>
+        <footer className='footer'>
             <p className="footer-title">Store</p>
             <p className="footer-copy">All rights reserved</p>
-        </div>
+        </footer>
     )
 }
