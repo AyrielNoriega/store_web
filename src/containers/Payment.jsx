@@ -15,17 +15,15 @@ export const Payment = () => {
     }
 
     const handlePaymentSuccess = (data) => {
-        console.log(data);
-        if (data.status === 'COMPLETED') {
+        console.log(data.status);
             const newOrder = {
                 buyer,
                 product: cart,
-                payment: data
+                // payment: data
             }
-
+            console.log(newOrder);
             addNewOrder(newOrder);
             navigate('/checkout/success');
-        }
     }
 
     return (
@@ -44,7 +42,7 @@ export const Payment = () => {
                     </div>
                 ))}
                 <div className="payment-button">
-                    Botón de pago
+                    <button type="button" onClick={handlePaymentSuccess}>Pagar</button>
                 </div>
             </div>
         </div>

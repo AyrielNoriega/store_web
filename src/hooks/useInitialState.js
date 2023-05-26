@@ -17,7 +17,6 @@ export const useInitialState = () => {
         const fetchData = async () => {
           try {
             const data = await getProductsApi();
-            // initialState.products = [...data];
             setState({
                 ...state,
                 products: data

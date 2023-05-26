@@ -7,7 +7,7 @@ export const Products = () => {
 
     const { state: {products}, addToCart } = useContext(AppContext);
     // const { products } = state;
-
+    console.log(products);
     const handleAddToCart = product => () => {
         addToCart(product)
     }
