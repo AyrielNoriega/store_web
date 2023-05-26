@@ -1,9 +1,35 @@
-import React, { useState } from 'react';
-import initialState from '../initialState';
+import { useEffect, useState } from 'react';
+// import initialState from '../initialState';
+import { getProductsApi } from '../services/api';
 
 export const useInitialState = () => {
 
+    let initialState = {
+        cart: [],
+        buyer: [],
+        orders: [],
+        products: [],
+    }
+
     const [ state, setState] = useState(initialState);
+
+    useEffect(() => {
+        const fetchData = async () => {
+          try {
+            const data = await getProductsApi();
+            // initialState.products = [...data];
+            setState({
+                ...state,
+                products: data
+            });
+            // Actualiza el estado con los productos recibidos
+          } catch (error) {
+            // Maneja el error de acuerdo a tus necesidades
+          }
+        };
+      
+        fetchData();
+    }, []);
 
     const addToCart = payload => {
         setState({

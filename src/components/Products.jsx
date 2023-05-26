@@ -15,6 +15,7 @@ export const Products = () => {
     return (
         <div className='products'>
             <div className="products-items">
+                {products.length === 0 && <h3>No hay productos</h3>}
                 {products.map(product => (
                     <Product key={product.id} product={product} handleAddToCart={handleAddToCart}/>
                 ))}
